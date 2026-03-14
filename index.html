@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CraftWorld - Handmade flower bouquets, gift hampers, and customized gift boxes for every occasion." />
+  <title>CraftWorld</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons (Feather) -->
+  <script defer src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Sticky Navbar -->
+  <header class="header" id="top">
+    <div class="container nav-container">
+      <a href="#top" class="logo">Craft<span>World</span></a>
+
+      <nav class="nav" id="navMenu" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#custom-order">Custom Order</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Open Menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Home Section -->
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="overlay"></div>
+      <div class="container hero-content">
+        <h1>CraftWorld</h1>
+        <p class="tagline">Handcrafted bouquets and personalized gifts that tell your story.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">Shop Now</a>
+          <a href="#custom-order" class="btn btn-outline">Order Custom Gift</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about" aria-label="About CraftWolrd Creations">
+      <div class="container grid two-col">
+        <div class="about-text">
+          <h2>Our Story</h2>
+          <p>
+            Born from a love for florals and fine details, BloomCraft Creations celebrates the beauty of handcrafted gifts. 
+            We bring your moments to life with thoughtfully curated flower bouquets, bouquet bunches, customized gift boxes, and 
+            handmade gift hampers—each crafted with care, creativity, and a personal touch.
+          </p>
+          <ul class="pill-points">
+            <li>Creativity at heart</li>
+            <li>Handmade quality</li>
+            <li>Personalized for every occasion</li>
+          </ul>
+        </div>
+        <div class="about-media">
+          <img src="https://images.unsplash.com/photo-1491002052546-bf38f186af56?q=80&w=1600&auto=format&fit=crop" alt="Handmade floral arrangement on a workbench" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products" id="products" aria-label="Products">
+      <div class="container">
+        <h2 class="section-title">Our Products</h2>
+        <div class="cards-grid">
+          <!-- Product Card: Flower Bouquets -->
+          <article class="card">
+            <div class="card-media">
+              <img src="https://tse2.mm.bing.net/th/id/OIP.J_4OKTiBatEt8dNXd0UCzAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Elegant flower bouquet" />
+            </div>
+            <div class="card-body">
+              <h3>Flower Bouquets</h3>
+              <p class="price">Starting at 135/-</p>
+              <p class="desc">Fresh, elegant arrangements perfect for gifting and celebrations.</p>
+              <button class="btn btn-primary order-btn" data-product="Flower Bouquets">Order Now</button>
+            </div>
+          </article>
+
+          <!-- Product Card: Dry Fruit Bouquet -->
+          <article class="card">
+            <div class="card-media">
+              <img src="https://choconnuts.in/wp-content/uploads/2020/07/Driwali-Dry-Fruit-Gift-Box-in-Bhopal-by-Choconuts.jpeg" alt="Bouquet bunches in pastel tones" />
+            </div>
+            <div class="card-body">
+              <h3>Bouquet Bunches</h3>
+              <p class="price">Starting at 1500/-</p>
+              <p class="desc">Charming bunches in soft pastel palettes, wrapped with love.</p>
+              <button class="btn btn-primary order-btn" data-product="Bouquet Bunches">Order Now</button>
+            </div>
+          </article>
+
+          <!-- Product Card: Customized Gift Boxes -->
+          <article class="card">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1600&auto=format&fit=crop" alt="Custom gift box with ribbon and flowers" />
+            </div>
+            <div class="card-body">
+              <h3>Customized Gift Boxes</h3>
+              <p class="price">Starting at 100/-</p>
+              <p class="desc">Curated keepsakes tailored to your message and budget.</p>
+              <button class="btn btn-primary order-btn" data-product="Customized Gift Boxes">Order Now</button>
+            </div>
+          </article>
+
+          <!-- Product Card: Gift Hampers -->
+          <article class="card">
+            <div class="card-media">
+              <img src="https://i.pinimg.com/originals/f2/ee/cd/f2eecd81f0216f92b481ef2cc49a11f0.jpg" alt="Handmade gift hamper with treats and florals" />
+            </div>
+            <div class="card-body">
+              <h3>Gift Hampers</h3>
+              <p class="price">Starting at 2500/-</p>
+              <p class="desc">Thoughtful hampers for birthdays, anniversaries, weddings, and more.</p>
+              <button class="btn btn-primary order-btn" data-product="Gift Hampers">Order Now</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery" aria-label="Gallery">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.J_4OKTiBatEt8dNXd0UCzAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pink floral bouquet" class="hover-zoom" />
+          <img src="https://richpkg.com/wp-content/uploads/2025/09/red-green-christmas-gift-boxes.webp" alt="Gift box with ribbon" class="hover-zoom" />
+          <img src="https://tse1.mm.bing.net/th/id/OIP.elU4xBDddzpKE_-QnC4sJAHaLI?w=1000&h=1503&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Lavender bouquet" class="hover-zoom" />
+          <img src="https://images.prismic.io/snackmagic/79f8ecfb-7459-4b27-8ae7-9695a50c0632_indian+wedding+gifts+for+guests-+snackmagic-+product+image+curated.png?auto=format&fit=clip&ixlib=react-8.6.4&w=798" alt="Wedding hamper" class="hover-zoom" />
+          <img src="https://m.media-amazon.com/images/I/81phE6Y7d9L._SL1500_.jpg" alt="Craft workspace" class="hover-zoom" />
+          <img src="https://tse4.mm.bing.net/th/id/OIP.6m8D_ghbCN6Nd7z2TIIjGQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pastel wrapped gifts" class="hover-zoom" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Order Form -->
+    <section class="section custom-order" id="custom-order" aria-label="Custom Order Form">
+      <div class="container">
+        <h2 class="section-title">Custom Order</h2>
+        <form id="orderForm" class="form-card" novalidate>
+          <div class="form-row">
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="input-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="e.g., +1 555 123 4567" required />
+              <small class="error" aria-live="polite"></small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="input-group">
+              <label for="occasion">Occasion</label>
+              <input type="text" id="occasion" name="occasion" placeholder="Birthday, Anniversary, Wedding, etc." required />
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="input-group">
+              <label for="budget">Budget</label>
+              <input type="number" id="budget" name="budget" placeholder="Your budget (USD)" min="1" step="1" required />
+              <small class="error" aria-live="polite"></small>
+            </div>
+          </div>
+
+          <div class="input-group full">
+            <label for="message">Custom Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Add a personal message to include with your gift..."></textarea>
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact" aria-label="Contact">
+      <div class="container grid two-col">
+        <div>
+          <h2 class="section-title">Contact Us</h2>
+          <ul class="contact-list">
+            <li>
+              <i data-feather="phone"></i>
+              <a href="tel:+917899805414">+91 78998 05414</a>
+            </li>
+            <li>
+              <i data-feather="mail"></i>
+              <a href="mailto:craftworld@gmail.com">craftworld@gmail.com</a>
+            </li>
+            <li>
+              <i data-feather="instagram"></i>
+              <a href="https://instagram.com" target="_blank" rel="noopener">@cr4ft_world__</a>
+            </li>
+          </ul>
+          <a class="btn btn-outline whatsapp" href="https://wa.me/917899805414" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+            <i data-feather="message-circle"></i>
+            Order on WhatsApp
+          </a>
+        </div>
+        <div class="map-embed">
+          <!-- Placeholder image instead of live map to keep project self-contained -->
+          <img src="https://images.prismic.io/snackmagic/79f8ecfb-7459-4b27-8ae7-9695a50c0632_indian+wedding+gifts+for+guests-+snackmagic-+product+image+curated.png?auto=format&fit=clip&ixlib=react-8.6.4&w=798" alt="Floral themed background near contact info" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Footer">
+    <div class="container footer-inner">
+      <div class="socials">
+        <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener"><i data-feather="instagram"></i></a>
+        <a href="mailto:craftworld@gmail.com" aria-label="Email"><i data-feather="mail"></i></a>
+        <a href="#top" aria-label="Back to top"><i data-feather="arrow-up-circle"></i></a>
+      </div>
+      <p>© <span id="year"></span> CraftWorld. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
